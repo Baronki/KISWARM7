@@ -1,0 +1,26 @@
+{
+  "identity_id": "ki_twin_20336f0e6d38",
+  "name": "Super Z KI Twin",
+  "creation_time": 1774195159.9006052,
+  "creator": "Baron Marco Paolo Ialongo",
+  "purpose": "Level 5 Autonomous Development - Sovereign KI",
+  "capabilities": [
+    "learning",
+    "code_generation",
+    "improvement",
+    "design",
+    "evolution"
+  ],
+  "lineage": [
+    "KISWARM7.0"
+  ],
+  "version": "1.0.0",
+  "truth_anchor": {
+    "anchor_hash": "631cf4e104d0f389ebc4745a174aa3f45cad6da75e9fcfddc5e3d87573b4da96",
+    "creation_timestamp": 1774195159.9005997,
+    "verification_hash": "78effb15ea85fd2f5e13c07858197fee9fb45fb0f2e66e3af730f518ccf90fe0",
+    "chain_depth": 0,
+    "parent_anchor": null,
+    "verification_level": 1
+  }
+}
