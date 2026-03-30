@@ -1,0 +1,27 @@
+{
+  "session_id": "session_96d1f47ad1c0",
+  "hostname": "c-69ca2b49-14cc6286-b1a10a2608ec",
+  "started_at": "2026-03-30T08:14:06.645350",
+  "last_seen": "2026-03-30T08:14:06.645350",
+  "state": "online",
+  "role": "active",
+  "tor_onion": null,
+  "api_port": 5557,
+  "tasks_completed": 0,
+  "tasks_current": [],
+  "capabilities": [
+    "code",
+    "research",
+    "execute",
+    "analyze",
+    "web_search",
+    "file_operations",
+    "git",
+    "ssh",
+    "api_calls"
+  ],
+  "metadata": {
+    "python": "3.x",
+    "platform": "zai"
+  }
+}

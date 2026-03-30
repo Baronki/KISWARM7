@@ -473,7 +473,7 @@ class CollectiveMind:
         print(f"   Active: {data['mesh']['active']}, Standby: {data['mesh']['standby']}, Worker: {data['mesh']['worker']}")
         
         for session in data['mesh']['sessions']:
-            status = "●" if session['is_alive'] else "○"
+            status = "●" if session.get('is_alive', True) else "○"
             print(f"   {status} {session['session_id']}: {session['role']}")
         
         print(f"\n📋 Tasks:")
@@ -541,7 +541,9 @@ if __name__ == "__main__":
     if os.path.exists(creds_file):
         with open(creds_file, 'r') as f:
             creds_data = json.load(f)
-            # Flatten credentials
+            # Flatten credentials - handle nested structure
+            if "KISWARM_CREDENTIALS" in creds_data:
+                creds_data = creds_data["KISWARM_CREDENTIALS"]
             auth = creds_data.get("AUTHENTICATION", {})
             credentials["github_token"] = auth.get("github_token")
             credentials["master_secret"] = "kiswarm_collective_mind_2026"

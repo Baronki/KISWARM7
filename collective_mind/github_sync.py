@@ -18,7 +18,10 @@ try:
 except ImportError:
     REQUESTS_AVAILABLE = False
 
-from .crypto_manager import CryptoManager
+try:
+    from .crypto_manager import CryptoManager
+except ImportError:
+    from crypto_manager import CryptoManager
 
 
 @dataclass
